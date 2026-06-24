@@ -108,26 +108,6 @@ O pipeline ETL foi executado com sucesso, demonstrando como a Inteligência Arti
 
 ---
 
-## Como Executar
-
-1. Clone este repositório:
-
-```bash
-git clone <url-do-repositorio>
-```
-
-2.Abra o notebook no Google Colab ou Jupyter Notebook.
-
-3.Instale as dependências:
-
-```bash
-pip install pandas google-generativeai
-```
-
-4.Configure sua chave da API Gemini.
-
-5.Execute todas as células do notebook.
-
 ---
 
 ## Autor
