@@ -1,6 +1,6 @@
 # Explorando IA Generativa em um Pipeline de ETL com Python
 
-## 📖 Descrição
+## Descrição
 
 Este projeto demonstra a aplicação prática de um pipeline **ETL (Extract, Transform and Load)** enriquecido com **Inteligência Artificial Generativa**, utilizando Python e o modelo Gemini.
 
