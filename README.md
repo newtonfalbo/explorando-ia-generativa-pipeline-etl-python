@@ -131,5 +131,6 @@ pip install pandas google-generativeai
 ---
 
 ## 👨‍💻 Autor
-Newton Falbo
-Projeto desenvolvido durante o bootcamp de Ciência de Dados com Python da DIO, explorando conceitos de ETL e Inteligência Artificial Generativa aplicados ao contexto financeiro.
+Newton Falbo. 
+
+Este projeto desenvolvido durante o bootcamp de Ciência de Dados com Python da DIO, explorando conceitos de ETL e Inteligência Artificial Generativa aplicados ao contexto financeiro.
