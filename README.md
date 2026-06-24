@@ -1,4 +1,4 @@
-# 🚀 Explorando IA Generativa em um Pipeline de ETL com Python
+# Explorando IA Generativa em um Pipeline de ETL com Python
 
 ## 📖 Descrição
 
@@ -10,7 +10,7 @@ Projeto desenvolvido como desafio prático do bootcamp de Ciência de Dados com 
 
 ---
 
-## 🎯 Objetivos
+## Objetivos
 
 * Aplicar os conceitos de ETL utilizando Python.
 * Realizar tratamento e enriquecimento de dados com Pandas.
@@ -19,7 +19,7 @@ Projeto desenvolvido como desafio prático do bootcamp de Ciência de Dados com 
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 * Python
 * Pandas
@@ -30,9 +30,9 @@ Projeto desenvolvido como desafio prático do bootcamp de Ciência de Dados com 
 
 ---
 
-## 🔄 Pipeline ETL
+## Pipeline ETL
 
-### 1️⃣ Extract
+### 1 Extract
 
 Nesta etapa, os dados dos clientes são carregados para o ambiente de análise.
 
@@ -48,7 +48,7 @@ Exemplo dos dados utilizados:
 
 ---
 
-### 2️⃣ Transform
+### 2 Transform
 
 Os dados passam por transformações e enriquecimento.
 
@@ -62,7 +62,7 @@ Essa classificação é utilizada posteriormente pela IA para personalizar as re
 
 ---
 
-### 3️⃣ IA Generativa
+### 3 IA Generativa
 
 Utilizando o modelo Gemini, o projeto gera recomendações financeiras personalizadas para cada cliente com base em:
 
@@ -77,7 +77,7 @@ Exemplo:
 
 ---
 
-### 4️⃣ Load
+### 4 Load
 
 Os dados enriquecidos são armazenados em um novo arquivo CSV contendo as recomendações geradas.
 
@@ -91,24 +91,24 @@ Exemplo de saída:
 
 ---
 
-## 📊 Resultados
+## Resultados
 
 O pipeline ETL foi executado com sucesso, demonstrando como a Inteligência Artificial Generativa pode agregar valor aos dados por meio da criação de insights personalizados.
 
 ---
 
-## 📂 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```text
-📦 projeto-etl-ia-generativa
- ┣ 📜 ETL_IA_Generativa.ipynb
- ┣ 📜 clientes_com_insights.csv
- ┗ 📜 README.md
+ projeto-etl-ia-generativa
+ ┣  ETL_IA_Generativa.ipynb
+ ┣  clientes_com_insights.csv
+ ┗  README.md
 ```
 
 ---
 
-## 🚀 Como Executar
+## Como Executar
 
 1. Clone este repositório:
 
@@ -130,7 +130,7 @@ pip install pandas google-generativeai
 
 ---
 
-## 👨‍💻 Autor
+## Autor
 
 Newton Falbo
 
