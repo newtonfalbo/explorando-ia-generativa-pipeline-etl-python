@@ -1,6 +1,6 @@
-# Explorando IA Generativa em um Pipeline de ETL com Python
+# 🚀 Explorando IA Generativa em um Pipeline de ETL com Python
 
-## Descrição
+## 📖 Descrição
 
 Este projeto demonstra a aplicação prática de um pipeline **ETL (Extract, Transform and Load)** enriquecido com **Inteligência Artificial Generativa**, utilizando Python e o modelo Gemini.
 
@@ -10,7 +10,7 @@ Projeto desenvolvido como desafio prático do bootcamp de Ciência de Dados com 
 
 ---
 
-## Objetivos
+## 🎯 Objetivos
 
 * Aplicar os conceitos de ETL utilizando Python.
 * Realizar tratamento e enriquecimento de dados com Pandas.
@@ -19,7 +19,7 @@ Projeto desenvolvido como desafio prático do bootcamp de Ciência de Dados com 
 
 ---
 
-## Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 
 * Python
 * Pandas
@@ -30,9 +30,9 @@ Projeto desenvolvido como desafio prático do bootcamp de Ciência de Dados com 
 
 ---
 
-## Pipeline ETL
+## 🔄 Pipeline ETL
 
-### 1 Extract
+### 1️⃣ Extract
 
 Nesta etapa, os dados dos clientes são carregados para o ambiente de análise.
 
@@ -48,7 +48,7 @@ Exemplo dos dados utilizados:
 
 ---
 
-### 2 Transform
+### 2️⃣ Transform
 
 Os dados passam por transformações e enriquecimento.
 
@@ -62,7 +62,7 @@ Essa classificação é utilizada posteriormente pela IA para personalizar as re
 
 ---
 
-### 3 IA Generativa
+### 3️⃣ IA Generativa
 
 Utilizando o modelo Gemini, o projeto gera recomendações financeiras personalizadas para cada cliente com base em:
 
@@ -77,7 +77,7 @@ Exemplo:
 
 ---
 
-### 4 Load
+### 4️⃣ Load
 
 Os dados enriquecidos são armazenados em um novo arquivo CSV contendo as recomendações geradas.
 
@@ -91,24 +91,24 @@ Exemplo de saída:
 
 ---
 
-## Resultados
+## 📊 Resultados
 
 O pipeline ETL foi executado com sucesso, demonstrando como a Inteligência Artificial Generativa pode agregar valor aos dados por meio da criação de insights personalizados.
 
 ---
 
-## Estrutura do Projeto
+## 📂 Estrutura do Projeto
 
 ```text
- projeto-etl-ia-generativa
- ┣  ETL_IA_Generativa.ipynb
- ┣  clientes_com_insights.csv
- ┗  README.md
+📦 projeto-etl-ia-generativa
+ ┣ 📜 ETL_IA_Generativa.ipynb
+ ┣ 📜 clientes_com_insights.csv
+ ┗ 📜 README.md
 ```
 
 ---
 
-##  Como Executar
+## 🚀 Como Executar
 
 1. Clone este repositório:
 
@@ -116,21 +116,22 @@ O pipeline ETL foi executado com sucesso, demonstrando como a Inteligência Arti
 git clone <url-do-repositorio>
 ```
 
-2. Abra o notebook no Google Colab ou Jupyter Notebook.
+2.Abra o notebook no Google Colab ou Jupyter Notebook.
 
-3. Instale as dependências:
+3.Instale as dependências:
 
 ```bash
 pip install pandas google-generativeai
 ```
 
-4. Configure sua chave da API Gemini.
+4.Configure sua chave da API Gemini.
 
-5. Execute todas as células do notebook.
+5.Execute todas as células do notebook.
 
 ---
 
 ## 👨‍💻 Autor
-Newton Falbo. 
 
-Este projeto desenvolvido durante o bootcamp de Ciência de Dados com Python da DIO, explorando conceitos de ETL e Inteligência Artificial Generativa aplicados ao contexto financeiro.
+Newton Falbo
+
+Projeto desenvolvido durante o bootcamp de Ciência de Dados com Python da DIO, explorando conceitos de ETL e Inteligência Artificial Generativa aplicados ao contexto financeiro.
