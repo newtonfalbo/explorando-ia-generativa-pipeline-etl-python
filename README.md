@@ -1,66 +1,135 @@
-# Santander Dev Week 2023 Java API
+# Explorando IA Generativa em um Pipeline de ETL com Python
 
-RESTful API da Santander Dev Week 2023 construída em Java 17 com Spring Boot 3.
+## Descrição
 
-## Principais Tecnologias
- - **Java 17**: Utilizaremos a versão LTS mais recente do Java para tirar vantagem das últimas inovações que essa linguagem robusta e amplamente utilizada oferece;
- - **Spring Boot 3**: Trabalharemos com a mais nova versão do Spring Boot, que maximiza a produtividade do desenvolvedor por meio de sua poderosa premissa de autoconfiguração;
- - **Spring Data JPA**: Exploraremos como essa ferramenta pode simplificar nossa camada de acesso aos dados, facilitando a integração com bancos de dados SQL;
- - **OpenAPI (Swagger)**: Vamos criar uma documentação de API eficaz e fácil de entender usando a OpenAPI (Swagger), perfeitamente alinhada com a alta produtividade que o Spring Boot oferece;
- - **Railway**: facilita o deploy e monitoramento de nossas soluções na nuvem, além de oferecer diversos bancos de dados como serviço e pipelines de CI/CD.
+Este projeto demonstra a aplicação prática de um pipeline **ETL (Extract, Transform and Load)** enriquecido com **Inteligência Artificial Generativa**, utilizando Python e o modelo Gemini.
 
-## [Link do Figma](https://www.figma.com/file/0ZsjwjsYlYd3timxqMWlbj/SANTANDER---Projeto-Web%2FMobile?type=design&node-id=1421%3A432&mode=design&t=6dPQuerScEQH0zAn-1)
+O objetivo é extrair dados de clientes, realizar transformações para classificação de perfil financeiro e gerar recomendações personalizadas por meio de IA, armazenando os resultados em um novo conjunto de dados.
 
-O Figma foi utilizado para a abstração do domínio desta API, sendo útil na análise e projeto da solução.
+Projeto desenvolvido como desafio prático do bootcamp de Ciência de Dados com Python da DIO.
 
-## Diagrama de Classes (Domínio da API)
+---
 
-```mermaid
-classDiagram
-  class User {
-    -String name
-    -Account account
-    -Feature[] features
-    -Card card
-    -News[] news
-  }
+## Objetivos
 
-  class Account {
-    -String number
-    -String agency
-    -Number balance
-    -Number limit
-  }
+* Aplicar os conceitos de ETL utilizando Python.
+* Realizar tratamento e enriquecimento de dados com Pandas.
+* Utilizar IA Generativa para produzir recomendações financeiras personalizadas.
+* Demonstrar a integração entre Ciência de Dados e Inteligência Artificial.
 
-  class Feature {
-    -String icon
-    -String description
-  }
+---
 
-  class Card {
-    -String number
-    -Number limit
-  }
+## Tecnologias Utilizadas
 
-  class News {
-    -String icon
-    -String description
-  }
+* Python
+* Pandas
+* Google Gemini API
+* Google Colab
+* Jupyter Notebook
+* GitHub
 
-  User "1" *-- "1" Account
-  User "1" *-- "N" Feature
-  User "1" *-- "1" Card
-  User "1" *-- "N" News
+---
+
+## Pipeline ETL
+
+### 1 Extract
+
+Nesta etapa, os dados dos clientes são carregados para o ambiente de análise.
+
+Exemplo dos dados utilizados:
+
+| ID | Nome   | Idade | Renda |
+| -- | ------ | ----- | ----- |
+| 1  | Ana    | 25    | 3500  |
+| 2  | Carlos | 42    | 8000  |
+| 3  | Marina | 31    | 5500  |
+| 4  | Pedro  | 58    | 12000 |
+| 5  | Lucas  | 22    | 2500  |
+
+---
+
+### 2 Transform
+
+Os dados passam por transformações e enriquecimento.
+
+Foi criada uma classificação de faixa de renda:
+
+* Baixa
+* Média
+* Alta
+
+Essa classificação é utilizada posteriormente pela IA para personalizar as recomendações.
+
+---
+
+### 3 IA Generativa
+
+Utilizando o modelo Gemini, o projeto gera recomendações financeiras personalizadas para cada cliente com base em:
+
+* Nome
+* Idade
+* Renda
+* Faixa de renda
+
+Exemplo:
+
+> "Priorize a construção de uma reserva de emergência antes de investir."
+
+---
+
+### 4 Load
+
+Os dados enriquecidos são armazenados em um novo arquivo CSV contendo as recomendações geradas.
+
+Exemplo de saída:
+
+| Nome   | Faixa de Renda | Insight IA                             |
+| ------ | -------------- | -------------------------------------- |
+| Ana    | Baixa          | Priorize uma reserva de emergência.    |
+| Carlos | Média          | Diversifique seus investimentos.       |
+| Pedro  | Alta           | Proteja e diversifique seu patrimônio. |
+
+---
+
+## Resultados
+
+O pipeline ETL foi executado com sucesso, demonstrando como a Inteligência Artificial Generativa pode agregar valor aos dados por meio da criação de insights personalizados.
+
+---
+
+## Estrutura do Projeto
+
+```text
+ projeto-etl-ia-generativa
+ ┣  ETL_IA_Generativa.ipynb
+ ┣  clientes_com_insights.csv
+ ┗  README.md
 ```
 
-## Documentação da API (Swagger)
+---
 
-### [https://sdw-2023-prd.up.railway.app/swagger-ui.html](https://sdw-2023-prd.up.railway.app/swagger-ui.html)
+##  Como Executar
 
-Esta API ficará disponível no Railway por um período de tempo limitado, mas este é um código-fonte aberto. Portanto, sintam-se à vontade para cloná-lo, modificá-lo (já que é um bom projeto base para novos projetos) e executar localmente ou onde achar mais interessante! Só não esquece de marcar a gente quando divulgar a sua solução 🥰
+1. Clone este repositório:
 
-### IMPORTANTE
+```bash
+git clone <url-do-repositorio>
+```
 
-Aos interessados no desenvolvimento da tela inicial do App do Santander (Figma) em Angular, Android, iOS ou Flutter... Caso a URL produtiva não esteja mais disponível, deixamos um Backup no GitHub Pages, é só dar um GET lá 😘
-- URL de Produção: https://sdw-2023-prd.up.railway.app/users/1
-- Mock (Backup): https://digitalinnovationone.github.io/santander-dev-week-2023-api/mocks/find_one.json
+2. Abra o notebook no Google Colab ou Jupyter Notebook.
+
+3. Instale as dependências:
+
+```bash
+pip install pandas google-generativeai
+```
+
+4. Configure sua chave da API Gemini.
+
+5. Execute todas as células do notebook.
+
+---
+
+## 👨‍💻 Autor
+Newton Falbo
+Projeto desenvolvido durante o bootcamp de Ciência de Dados com Python da DIO, explorando conceitos de ETL e Inteligência Artificial Generativa aplicados ao contexto financeiro.
